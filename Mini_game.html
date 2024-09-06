@@ -1,36 +1,64 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tic-Tac-Toe</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Planting Game</title>
+    <!-- Link to external styles.css -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="header">
-    <h1>Tic-Tac-Toe</h1>
-  </div>
-  <div id="game-configuration">
-    <!-- Identity Selection Buttons -->
-    <button class="identity-cell" value="X">Play as X</button>
-    <button class="identity-cell" value="O">Play as O</button>
-  </div>
-  <div id="game-grid">
-    <!-- Game Grid -->
-    <div class="game-cell" id="c00"></div>
-    <div class="game-cell" id="c01"></div>
-    <div class="game-cell" id="c02"></div>
-    <div class="game-cell" id="c10"></div>
-    <div class="game-cell" id="c11"></div>
-    <div class="game-cell" id="c12"></div>
-    <div class="game-cell" id="c20"></div>
-    <div class="game-cell" id="c21"></div>
-    <div class="game-cell" id="c22"></div>
-  </div>
-  <div id="game-over">
-    <h2 id="game-end-heading"></h2>
-    <p id="game-end-subheading"></p>
-    <button id="game-reset-btn">Play Again</button>
-  </div>
-  <script src="script.js"></script>
+
+    <div class="init active">
+        <div class="center1">
+            <h1>WE NEED YOU!</h1>
+            <p>Click on each square to plant a tree. You must hurry or the factories will colonize us!</p>
+            <p class="floating bold" id="start-game-btn">START GAME</p>
+        </div>
+    </div>
+
+    <div class="won">
+        <div class="center">
+            <h1>YOU WON!</h1>
+            <p class="floating replay bold" id="replay-btn">Save the World again</p>
+        </div>
+    </div>
+
+    <div class="init hidden"><h1 class="center">INCREASED VELOCITY!</h1></div>
+
+    <div class="counter">Level: 1</div>
+
+    <div class="container">
+        <div class="game" id="game-board">
+            <!-- Add 25 grid items for the game -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+
+    <!-- Link to external script.js -->
+    <script src="script.js"></script>
+
 </body>
 </html>
