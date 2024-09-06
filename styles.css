@@ -14,8 +14,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background-color: linear-gradient(90deg, rgba(255,182,193,1) 0%, rgba(255,204,255,1) 52%, rgba(255,182,193,1) 100%);
+    background: linear-gradient(90deg, rgba(255,182,193,1) 0%, rgba(255,204,255,1) 52%, rgba(255,182,193,1) 100%);
 }
+
 
 h1, h2 {
     font-family: 'Roboto', sans-serif;
