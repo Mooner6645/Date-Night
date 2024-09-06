@@ -1,27 +1,101 @@
-#game-grid {
+body {
+    background-color: #fdf6f6; /* Soft pink background */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #header h1 {
+    text-align: center;
+    color: #e91e63; /* Soft pink color */
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  
+  #game-configuration {
+    text-align: center;
+  }
+  
+  .identity-cell {
+    background-color: #ffebee; /* Light pink */
+    border: none;
+    color: #e91e63; /* Matching pink */
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .identity-cell:hover {
+    background-color: #f8bbd0; /* Slightly darker pink */
+    transform: scale(1.05);
+  }
+  
+  #game-grid {
     display: none;
-    /* Add your grid styles here */
+    text-align: center;
   }
   
   .game-cell {
     width: 100px;
     height: 100px;
-    border: 1px solid #000;
+    border: 2px solid #f48fb1; /* Light pink border */
     display: inline-block;
     text-align: center;
     line-height: 100px;
-    font-size: 24px;
+    font-size: 2em;
+    color: #e91e63; /* Matching pink */
+    background-color: #fce4ec; /* Very light pink */
     cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .game-cell:hover {
+    background-color: #f8bbd0; /* Slightly darker pink */
+    transform: scale(1.05);
   }
   
   .cell-selected {
     font-weight: bold;
+    color: #c2185b; /* Darker pink */
   }
   
   .cell-win {
-    background-color: yellow;
+    background-color: #ffebee; /* Light pink */
+    color: #e91e63; /* Dark pink */
+    font-size: 2.5em;
+    transition: background-color 0.5s ease-in-out;
   }
   
   #game-over {
     display: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #game-end-heading {
+    font-size: 2em;
+    color: #e91e63; /* Matching pink */
+  }
+  
+  #game-end-subheading {
+    font-size: 1.2em;
+    color: #f48fb1; /* Slightly lighter pink */
+  }
+  
+  #game-reset-btn {
+    background-color: #e91e63; /* Matching pink */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  #game-reset-btn:hover {
+    background-color: #c2185b; /* Darker pink */
+    transform: scale(1.05);
   }
