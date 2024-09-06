@@ -122,3 +122,28 @@ function fire(e) {
 box.forEach(function(box) {
     box.addEventListener('click', fire);
 });
+
+function generateHeartEmoji() {
+    var emoji = document.createElement('div');
+    emoji.innerHTML = '❤️'; // Heart emoji
+    emoji.classList.add('heart'); // Add a class for styling
+
+    // Calculate random font size between 10px and 40px
+    emoji.style.fontSize = Math.floor(Math.random() * 30) + 10 + 'px';
+
+    // Calculate random vertical position within the visible area of the window
+    var maxTop = window.innerHeight - parseInt(emoji.style.fontSize);
+    emoji.style.top = Math.random() * maxTop + 'px';
+
+    // Calculate random horizontal position within the visible area of the window
+    var maxLeft = window.innerWidth - parseInt(emoji.style.fontSize);
+    emoji.style.left = Math.random() * maxLeft + 'px';
+
+    document.body.appendChild(emoji);
+}
+
+// Call generateHeartEmoji function multiple times to create multiple hearts
+var heartsCount = 26; // Number of heart emojis
+for (var i = 0; i < heartsCount; i++) {
+    generateHeartEmoji();
+}

@@ -162,6 +162,13 @@ p {
   visibility: hidden;
 }
 
+.heart {
+    position: absolute;
+    font-size: 24px;
+    z-index: -1;
+}
+
+
 @keyframes won {
     from {top: 100%; transform: rotate(180deg);}
     to   {top: 30%; transform: rotate(0deg);}    
