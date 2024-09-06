@@ -188,7 +188,7 @@ body {
   transform-origin: bottom left;
   border-radius: 4vmin 10vmin 4vmin 4vmin;
   transform: translate(0%, 18%) rotateX(70deg) rotate(-43deg);
-  background-image: linear-gradient(to top, #ee5286, #ee5286);
+  background-image: linear-gradient(to top, #38063f, #38063f);
   z-index: 1;
   opacity: 0.8;
 }
