@@ -47,6 +47,45 @@ body {
   transition: opacity 2s ease;
 }
 
+.moon-btn {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: 11.5%; /* Center the moon vertically */
+  left: 50%; /* Center the moon horizontally */
+  text-decoration: none;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 5s ease, height 5s ease, border-radius 5s ease;
+  transform: translate(-50%, -50%); /* Adjust for centering */
+}
+
+  .moon-btn.expanded {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+      pointer-events: none;
+      z-index: 3;
+      top: 50%;
+      left: 50%;
+  }
+
+.moon-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 2s ease;
+}
+
 .moon-btn.expanded .moon-message {
   opacity: 1;
 }
