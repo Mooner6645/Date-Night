@@ -101,7 +101,7 @@ p {
 }
 
 .tree {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KICA8Y2lyY2xlIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1vcGFjaXR5PSJyb3VuZCIgc3Ryb2tlLW1pdGxhYmxlPSJjcmVhbS12aXAiLz4KPC9zdmc+Cg==');
+    background-image: url('heart.png');
 }
 
 .red {
@@ -112,7 +112,7 @@ p {
 }
 
 .factory {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIj4KICA8Y2lyY2xlIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMTIiIHN0cm9rZS1vcGFjaXR5PSJyb3VuZCIgc3Ryb2tlLW1pdGxhYmxlPSJjcmVhbS12aXAiLz4KPC9zdmc+Cg==');
+    background-image: url('broken_heart.png');
 }
 
 
