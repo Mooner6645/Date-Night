@@ -1,16 +1,36 @@
-<html lang="en"></html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div id="header">
     <h1>Tic-Tac-Toe</h1>
-    <div id="gameboard">
-        <!-- Game board cells will be added by JavaScript -->
-    </div>
-    <button id="restart">Restart Game</button>
-    <script src="script.js"></script>
+  </div>
+  <div id="game-configuration">
+    <!-- Identity Selection Buttons -->
+    <button class="identity-cell" value="X">Play as X</button>
+    <button class="identity-cell" value="O">Play as O</button>
+  </div>
+  <div id="game-grid">
+    <!-- Game Grid -->
+    <div class="game-cell" id="c00"></div>
+    <div class="game-cell" id="c01"></div>
+    <div class="game-cell" id="c02"></div>
+    <div class="game-cell" id="c10"></div>
+    <div class="game-cell" id="c11"></div>
+    <div class="game-cell" id="c12"></div>
+    <div class="game-cell" id="c20"></div>
+    <div class="game-cell" id="c21"></div>
+    <div class="game-cell" id="c22"></div>
+  </div>
+  <div id="game-over">
+    <h2 id="game-end-heading"></h2>
+    <p id="game-end-subheading"></p>
+    <button id="game-reset-btn">Play Again</button>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
