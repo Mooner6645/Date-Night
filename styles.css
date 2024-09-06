@@ -11,10 +11,16 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: #f8f994;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(255,182,193); /* Light pink base color */
+    background: linear-gradient(90deg, rgba(255,182,193,1) 0%, rgba(255,204,255,1) 52%, rgba(255,182,193,1) 100%); /* Smooth gradient */
+    position: relative; /* Position hearts relative to body */
+    overflow: hidden; /* Hide any overflow from animated elements */
+    margin: 0; /* Remove default margin for a full-page layout */
 }
 
 h1, h2 {
