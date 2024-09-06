@@ -27,7 +27,7 @@
             z-index: -1;
         }
 
-        /* Styling for the poem content */
+        /* Styling for the content section */
         .content-section {
             text-align: center;
             color: white;
@@ -36,15 +36,15 @@
             margin: 0 auto;
         }
 
-            .content-section h1 {
-                font-size: 2em;
-                margin-bottom: 20px;
-            }
+        .content-section h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
 
-            .content-section p {
-                font-size: 1.2em;
-                line-height: 1.6;
-            }
+        .content-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
 
         /* Additional text styling */
         .additional-text {
@@ -52,23 +52,30 @@
             margin-top: 30px;
             color: #FFD700; /* Gold color for contrast */
         }
+
+        /* Embedded video styling */
+        iframe {
+            margin-top: 20px;
+            width: 560px;
+            height: 315px;
+            border: none;
+        }
     </style>
 </head>
 <body>
     <div class="night"></div>
 
-    <!-- First content section for poem or message -->
+    <!-- First content section for the playlist -->
     <div class="content-section">
         <h1>My love</h1>
-        <p>
-            https://www.youtube.com/playlist?list=PL2YRdvnI6Xz4Dg4DV6dRMWyasV2TLE6hN
-        </p>
+        <!-- Embedded YouTube playlist -->
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PL2YRdvnI6Xz4Dg4DV6dRMWyasV2TLE6hN" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
 
     <!-- Second content section for additional text -->
     <div class="content-section additional-text">
         <p>
-            Even though we are apart now, let the music play and know i will always be by your side.
+            Even though we are apart now, let the music play and know I will always be by your side.
         </p>
     </div>
 
