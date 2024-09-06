@@ -34,6 +34,62 @@ body {
     repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(7, 107, 42), rgb(240, 240, 240));
 }
 
+
+.moon-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 2s ease;
+}
+
+.moon-btn.expanded .moon-message {
+  opacity: 1;
+}
+
+.moon-crater {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #999999;
+  border-radius: 50%;
+}
+
+.moon-crater1 {
+  top: 40px;
+  left: 80px;
+  width: 25px;
+  height: 20px;
+}
+
+.moon-crater2 {
+  top: 100px;
+  right: 30px;
+  width: 17px;
+  height: 15px;
+}
+
+.moon-crater3 {
+  top: 150px;
+  left: 120px;
+  width: 35px;
+  height: 30px;
+}
+
+.firefly {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ffff00; /* Yellow color for fireflies */
+  border-radius: 50%;
+  animation: float 4s infinite linear;
+  box-shadow: 0 0 10px 5px #ffff00;
+}
+
 .flowers {
   position: relative;
   transform: scale(0.9);

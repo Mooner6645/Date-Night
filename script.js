@@ -140,10 +140,10 @@ function generateHeartEmoji() {
     emoji.style.left = Math.random() * maxLeft + 'px';
 
     document.body.appendChild(emoji);
-}
+};
 
 // Call generateHeartEmoji function multiple times to create multiple hearts
 var heartsCount = 26; // Number of heart emojis
 for (var i = 0; i < heartsCount; i++) {
     generateHeartEmoji();
-}
+};
